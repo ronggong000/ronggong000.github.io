@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Singyu Muk — research in embodied AI, human motion, video generation, and scalable robot learning.">
+  <meta name="theme-color" content="#f4f1ea">
+  <title>Singyu Muk | AI Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Singyu Muk home">SM</a>
+    <nav aria-label="Main navigation">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#about">About</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">AI researcher · Melbourne, Australia</p>
+        <h1>Singyu Muk</h1>
+        <p class="hero-lead">
+          I study how machines can reconstruct, represent, and generate motion from
+          human video—toward scalable learning for embodied agents.
+        </p>
+        <p class="hero-detail">
+          My work connects 3D human motion, sign language production, whole-body pose,
+          and video generative models. I am currently exploring transferable motion
+          representations and generative priors for interactive embodied behavior.
+        </p>
+        <div class="hero-links" aria-label="Profile links">
+          <a class="button primary" href="mailto:ronggong000@gmail.com">Email</a>
+          <a class="button" href="Singyu_Muk_PhD_CV_Fall2027.pdf">CV</a>
+          <a class="button" href="https://github.com/ronggong000" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Research summary">
+        <div class="monogram" aria-hidden="true">SM</div>
+        <div>
+          <span class="status-dot"></span>
+          Applying for Fall 2027 PhD positions
+        </div>
+        <dl>
+          <div><dt>Focus</dt><dd>Embodied AI &amp; generative motion</dd></div>
+          <div><dt>Education</dt><dd>Monash University, M.AI</dd></div>
+          <div><dt>Current</dt><dd>Monash Assistive Tech</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section id="research" class="section-shell section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Research</p>
+        <h2>Motion as a bridge between video and embodied intelligence.</h2>
+      </div>
+      <div class="focus-grid">
+        <article>
+          <span class="focus-number">01</span>
+          <h3>Motion representation</h3>
+          <p>Learning transferable temporal representations from unlabeled human video and synthetic 3D data.</p>
+        </article>
+        <article>
+          <span class="focus-number">02</span>
+          <h3>Generative motion</h3>
+          <p>Controllable human, hand, and facial motion generation with multimodal and video foundation models.</p>
+        </article>
+        <article>
+          <span class="focus-number">03</span>
+          <h3>Embodied learning</h3>
+          <p>Scalable training data and motion priors for interactive agents that perceive and act in closed loop.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="section-shell section-block">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2>Research projects</h2>
+        </div>
+        <p>From high-fidelity 3D motion data to models that preserve and generate fine-grained behavior.</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card featured">
+          <div class="project-visual visual-sign" aria-hidden="true">
+            <div class="frame frame-a"><span></span><span></span><span></span></div>
+            <div class="flow-arrow">→</div>
+            <div class="motion-trace"><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="project-content">
+            <div class="meta-row">
+              <span class="venue accepted">WACV 2027 · Accepted</span>
+              <span>3D motion · Sign language</span>
+            </div>
+            <h3>MV-Sign: Multi-View 3D Motion Integration and Enhanced Text-to-Motion Conditioning for Sign Language Production</h3>
+            <p class="authors"><strong>Singyu Muk</strong>, Kaustubh Kundu, Kunyuan Xie, Weijie Wang, Kalin Stefanov</p>
+            <p>
+              A multi-view curation pipeline for high-fidelity 3D signing data, paired with
+              sign-aware motion tokenization, pseudo-gloss conditioning, and keyframe-aware retrieval.
+              The system reduces body and hand DTW-PA-JPE by 32.8% and 20.9% over reported prior work.
+            </p>
+            <div class="tags"><span>SMPL-X</span><span>VQ-VAE</span><span>Text-to-motion</span><span>Multi-view</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-hand" aria-hidden="true">
+            <div class="hand-map"><i></i><i></i><i></i><i></i><i></i><b></b></div>
+            <div class="metric"><strong>57.83</strong><span>→</span><strong>65.73</strong><small>macro AUC</small></div>
+          </div>
+          <div class="project-content">
+            <div class="meta-row">
+              <span class="venue review">WACV 2027 · Under review</span>
+              <span>Whole-body pose · Adaptation</span>
+            </div>
+            <h3>S2HAND: Accuracy-Preservation Trade-Offs for Hand Specialization in Whole-Body Pose Models</h3>
+            <p class="authors"><strong>Singyu Muk</strong>, Xuanren Song, Kalin Stefanov</p>
+            <p>
+              Hand specialization for Sapiens2-5B through protected-output adaptation and
+              Fisher-selected Transformer tuning, improving difficult hand pose while retaining
+              the unified 308-keypoint interface and non-hand behavior.
+            </p>
+            <div class="tags"><span>Sapiens2</span><span>Hand pose</span><span>Efficient adaptation</span></div>
+          </div>
+        </article>
+
+        <article class="project-card ongoing-card">
+          <div class="project-visual visual-motion" aria-hidden="true">
+            <div class="latent-grid"></div>
+            <div class="pulse-line"></div>
+          </div>
+          <div class="project-content">
+            <div class="meta-row">
+              <span class="venue ongoing">Ongoing research</span>
+              <span>Video generation · Embodied agents</span>
+            </div>
+            <h3>Transferable Motion Representations from Video Generative Models</h3>
+            <p>
+              Investigating motion factorization inside video diffusion transformers, with an
+              emphasis on separating action dynamics from identity, appearance, viewpoint, and
+              rig-specific control for interactive embodied behavior.
+            </p>
+            <div class="tags"><span>Video DiT</span><span>Motion factorization</span><span>Cross-rig control</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section-shell section-block about-grid">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Research grounded in data, models, and working systems.</h2>
+      </div>
+      <div class="about-copy">
+        <p>
+          I completed a Master of Artificial Intelligence at Monash University with First Class
+          Honours (WAM 81/100). At Monash Assistive Tech, I work on fine-grained 3D motion
+          reconstruction and generation. Previously, at the Chinese Academy of Sciences, I built
+          a video-to-pose data pipeline that processed approximately 90,000 videos.
+        </p>
+        <p>
+          I am seeking Fall 2027 PhD opportunities in embodied AI, robot learning from video,
+          motion representation, and multimodal generative models.
+        </p>
+        <div class="skill-line">
+          <span>Python</span><span>PyTorch</span><span>CUDA</span><span>Transformers</span>
+          <span>Video generation</span><span>SMPL-X</span><span>Blender</span><span>CALVIN</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-shell">
+      <p class="eyebrow">Let’s talk</p>
+      <h2>Interested in motion, video, and embodied intelligence?</h2>
+      <a href="mailto:ronggong000@gmail.com">ronggong000@gmail.com <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <span>© <span id="year"></span> Singyu Muk</span>
+    <span>Built for clarity, hosted on GitHub Pages.</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
